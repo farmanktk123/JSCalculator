@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f172a;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.main-container
+{
+
+  width: 400px;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  margin-top: 8rem;
+}
+
+.msg-box
+{
+    /* background-color: #24272e;
+    margin: 0.22rem;
+    padding: 15px;
+    text-align: right;
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+    /* border: 1px solid yellow; */
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px #28282b; */
+
+    background: #0f172a;
+    color: #fff;
+    padding: 15px;
+    text-align: right;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    
+}
+
+.msg-box p {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+.numeric-main-box
+{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: auto;
+    
+}
+
+.refresh-box
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+span
+{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #334155;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 18px;
+}
+
+span:hover {
+    background: #475569;
+    transform: scale(1.05);
+  }
+  span:active {
+    transform: scale(0.95);
+  }
+
+  .refresh-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .refresh-box span {
+    background: #f59e0b;
+    color: black;
+  }
+
+  .integer-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .calcul-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .calcul-box span {
+    background: #22c55e;
+    color: black;
+  }
+
+  .calcul-box span:nth-child(5) {
+    background: #ef4444;
+    color: white;
+  }
