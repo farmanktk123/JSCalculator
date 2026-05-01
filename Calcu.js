@@ -27,6 +27,26 @@ msgpara.style.fontSize = "40px";
             }
     }
 
+// button click hony per akhri msg remove ho 
+
+let backbtn = document.querySelector("#backspacebtn");
+backbtn.addEventListener("click", ()=>
+{
+    // Backspace (image button)
+    if (backbtn.id === "backspacebtn") {
+        // alert("Hell0");
+        currmsg = currmsg.slice(0, -1);
+        msgpara.innerText = currmsg;
+        
+        // agar empty ho jaye to 0 dikhao
+
+        if(currmsg === "0")
+        {
+            currmsg = "";
+        }
+        msgpara.innerText = currmsg;
+    }
+});
 
     function handleClear()
     {
@@ -42,23 +62,6 @@ msgpara.style.fontSize = "40px";
         
                             currmsg = "";
                             msgpara.innerText = "0";
-                    }
-        
-                            // button click hony per akhri msg remove ho 
-        
-                    else if(btn.innerText === "x")
-                    {
-                        currmsg =currmsg.slice(0,-1);
-                        msgpara.innerText = currmsg;
-        
-                        //  if curent value equal to zero then it set to 0
-        
-                        if(currmsg === "")
-                            {
-                                currmsg = "";
-                            }
-        
-                        msgpara.innerText = currmsg;
                     }
         
                     else if(btn.innerText === "%")
