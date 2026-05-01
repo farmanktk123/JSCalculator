@@ -93,6 +93,28 @@ span:hover {
     transform: scale(0.95);
   }
 
+#backspacebtn
+  {
+    width: 82px;
+    height: 66px;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+    transition: 0.2s;
+    
+  }
+
+  #backspacebtn:hover {
+    background: #475569;
+    transform: scale(1.05);
+  }
+  #backspacebtn:active {
+    transform: scale(0.95);
+  }
+
   .refresh-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
